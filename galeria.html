@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galeria</title>
+    <link rel="stylesheet" href="../repo/style.css">
+
+    <script src="https://kit.fontawesome.com/c672bf2245.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img class="Logo" src="imagenes/logo.jpg" alt="Logo" width="300">
+  
+        <h1>Introducción al desarrollo Web</h1>
+        <nav>
+           
+            <a href="../repo/Index.html">Inicio</a>|
+            <a href="../repo/biografia.html">Biografía</a>|
+            <a href="../repo/galeria.html">Galeria</a>
+           
+        </nav>
+     </header>  
+      
+     
+     <main>
+        <section>
+        <h2>Galeria</h2>
+
+  <nav id="sidebar">
+      <button id="paseo-btn" onclick="showCategory('paseo')">Paseos</button>
+      <button id="friends-btn" onclick="showCategory('friends')">Amigos </button>
+      <button id="dance-btn" onclick="showCategory('dance')">Danza </button>
+  </nav>
+
+ <div id="gallery">
+        <div class="category" id="paseo">
+           <div class="image"><img src="imagenes/paseo01.jpeg" alt="paseo01" width="300"></div>
+           <div class="image"><img src="imagenes/paseo02.jpeg" alt="paseo02" width="300"></div>
+           <div class="image"><img src="imagenes/paseo03.jpeg" alt="paseo03" width="300"></div>
+           <div class="image"><img src="imagenes/paseo04.jpg"  alt="paseo04" width="300"></div>
+        </div>
+        <div class="category" id="friends">
+           <div class="image"><img src="imagenes/friends01.jpeg" alt="friends01" width="300"></div>
+           <div class="image"><img src="imagenes/friends02.jpeg" alt="friends02" width="300"></div>
+           <div class="image"><img src="imagenes/friends03.jpg" alt="friends03" width="300"></div>
+           <div class="image"><img src="imagenes/friends04.jpg" alt="friends04" width="300"></div>
+        </div>
+         <div class="category" id="dance" >
+          <div class="image"><img src="imagenes/dance01.jpg" alt="dance01" width="300"></div>
+          <div class="image"><img src="imagenes/dance02.jpg" alt="dance02" width="300"></div>
+          <div class="image"><img src="imagenes/dance03.jpg" alt="dance03" width="300"></div>
+          <div class="image"><img src="imagenes/dance04.jpg" alt="dance04" width="300"></div>
+       </div>
+</div>
+   </section>
+    </main>
+ 
+    <footer>
+        <small>&#169;2021 Hecho por <strong> Mayra Cortes</strong>|
+  
+      <a href="https://www.facebook.com/" target="_blank" ><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/?hl=es-la" target="_blank" ><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/?lang=es" target="_blank" ><i class="fab fa-twitter-square"></i></a>
+      <a href="https://cr.linkedin.com/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+
+ 
+      
+    </small>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

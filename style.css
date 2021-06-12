@@ -1,0 +1,134 @@
+header{background-color: lightskyblue;
+    padding: 15px;
+ }
+
+ a{
+    text-decoration: none; font-family: cursive; font-size: 21px;padding:10px
+
+}
+
+
+h1{display: inline-block; font-family: Georgia, 'Times New Roman', Times, serif ;color: rgb(146, 7, 134);}
+h2{
+    text-align: center; font-size: 21px;font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0px 0px 20px lightskyblue; 
+}
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgb(247, 2, 161);
+}
+.Logo{ border-radius: 16px;}
+
+
+
+nav{ 
+    background-color:rgb(207, 99, 221);
+    padding: 10px;
+    box-shadow: 0px 0px 20px;
+}
+body{
+    max-width: 1280px;
+    margin: auto;
+}
+
+li{list-style-type: none;}
+
+i{display:inline-block;}
+
+.contenedor1{
+   width: 400px;
+   background-color: bisque;
+   display: inline-block;
+   padding: 30px;
+   margin: 40px;
+   box-shadow: 0px 0px 35px rgb(3, 106, 170); 
+   animation: BGcolorChanging-2colors 5s linear infinite alternate both;
+}
+@keyframes BGcolorChanging-2colors{
+    0% {
+        background-color: rgb(118, 137, 243);
+    }
+    33.3333%{
+        background-color: rgb(235, 117, 192);
+    }
+}
+
+
+.contenedor2{ 
+    width: 400px;
+    background-color:bisque;
+    display: inline-block;
+    padding: 30px;
+    margin: 40px;
+    box-shadow: 0px 0px 35px rgb(1, 67, 107);
+    animation: BGcolorChanging-2colors 5s linear infinite alternate both;
+} 
+@keyframes BGcolorChanging-2colors{
+    0% {
+        background-color: rgb(118, 137, 243);
+    }
+    33.3333%{
+        background-color: rgb(235, 117, 192);
+    }
+}
+
+
+.imageju{ float: left; margin: 10px;}
+p{ font-size: 18px; font-family:Georgia, 'Times New Roman', Times, serif;
+padding-left: 15px; width: 1000;}
+
+button{
+    font-family: math;
+    font-size: 19px;
+    border-radius: 10px;
+    text-shadow: 3px 2px 5px rgb(199, 19, 94);
+    box-shadow: 10px 10px  rgb(237, 177, 245);
+border: 2px solid rgba(126, 5, 100, 0.467);
+}
+button:hover{
+    background-color: #a945a9;
+    box-shadow: 0 0 10px #a945a9, 0 0 40px #f8c5f8
+    0 0 80px #a945a9;
+    transition-delay: 1s;
+}
+
+
+#sidebar{
+    background-color: white;
+}
+
+
+.category{
+    
+    margin:5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.image{
+    margin:5px;
+    padding: 5px;
+    display: inline-block;
+    height: 300px;
+
+
+}
+
+#friends, #dance, #textobiografia{
+    display: none;
+}
+.image img:hover{
+    transform: scale(1.1);
+}
+
+
+  
+  
+  
+
+
+
+footer{background-color: rgb(207, 99, 221);padding: 5px; font-size: 21px; color: indigo;}
