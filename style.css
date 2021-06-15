@@ -1,38 +1,71 @@
+/*Estilos Globales*/
 header{background-color: lightskyblue;
-    padding: 15px;
+      padding: 15px;
  }
+a{text-decoration: none;
+    font-family: 'Courgette', cursive;
+    font-size: 23px;
+    padding:10px;
+    text-align: center;
+  }
 
- a{
-    text-decoration: none; font-family: cursive; font-size: 21px;padding:10px
-
+h1{ display: inline-block;
+    font-family: 'Courgette', cursive;
+    font-size:50px;
+    color: rgb(146, 7, 134);
+    background: linear-gradient(to right,#033838,#f52bb8,#a945a9);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
 }
 
-
-h1{display: inline-block; font-family: Georgia, 'Times New Roman', Times, serif ;color: rgb(146, 7, 134);}
-h2{
-    text-align: center; font-size: 21px;font-family: Georgia, 'Times New Roman', Times, serif;
-    box-shadow: 0px 0px 20px lightskyblue; 
+h2{text-align: center;
+   font-size: 21px;
+   font-family: 'Courgette', cursive;
+   box-shadow: 0px 0px 20px lightskyblue; 
 }
-h3{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+h3{font-family: 'Courgette', cursive;
     font-size: 18px;
     color: rgb(247, 2, 161);
 }
-.Logo{ border-radius: 16px;}
-
-
+.Logo{ border-radius: 16px; 
+       width: 300px;
+       border: 2px solid rgb(235, 138, 230);}
 
 nav{ 
     background-color:rgb(207, 99, 221);
+    border-radius: 30px;
     padding: 10px;
     box-shadow: 0px 0px 20px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+ 
+.navegacion a:hover{
+    color: lavenderblush;
+    background: transparent;
+    border: 2px solid rgb(235, 229, 226);
+}
+.navegacion a:link{
+    background-color: rgb(230, 169, 204);
+    border: 2px solid rgb(155, 240, 226);
+    width: 10px;
+    border-radius: 10px;
+    padding: 2px;
+    
 }
 body{
     max-width: 1280px;
     margin: auto;
+    font-family: 'Courgette', cursive;
+    background-color:rgb(248, 231, 242);
 }
-
-li{list-style-type: none;}
+#sidebar{
+    background-color: white;
+}
+    
+/* Estilos de Contenedores */
+li{list-style-type: none;
+font-size: 20px;}
 
 i{display:inline-block;}
 
@@ -40,8 +73,8 @@ i{display:inline-block;}
    width: 400px;
    background-color: bisque;
    display: inline-block;
-   padding: 30px;
-   margin: 40px;
+   padding: 50px;
+   margin: 65px;
    box-shadow: 0px 0px 35px rgb(3, 106, 170); 
    animation: BGcolorChanging-2colors 5s linear infinite alternate both;
 }
@@ -59,8 +92,8 @@ i{display:inline-block;}
     width: 400px;
     background-color:bisque;
     display: inline-block;
-    padding: 30px;
-    margin: 40px;
+    padding: 50px;
+    margin: 65px;
     box-shadow: 0px 0px 35px rgb(1, 67, 107);
     animation: BGcolorChanging-2colors 5s linear infinite alternate both;
 } 
@@ -72,19 +105,30 @@ i{display:inline-block;}
         background-color: rgb(235, 117, 192);
     }
 }
+#icono1{
+    color: white;
+}
+#icono2{
+    color: white;
+}
 
+   /* Estilos de Biografia*/ 
+.imageju{ float: left; 
+          margin: 10px;
+          width: 150px;}
 
-.imageju{ float: left; margin: 10px;}
-p{ font-size: 18px; font-family:Georgia, 'Times New Roman', Times, serif;
-padding-left: 15px; width: 1000;}
-
+p{ color: rgb(179, 18, 179);
+  font-size: 18px;
+  font-family: 'Courgette', cursive;
+  padding-left: 15px; width: 1000;}
+/* Estilos de botones generales*/
 button{
-    font-family: math;
+    font-family: 'Courgette', cursive;
     font-size: 19px;
     border-radius: 10px;
     text-shadow: 3px 2px 5px rgb(199, 19, 94);
     box-shadow: 10px 10px  rgb(237, 177, 245);
-border: 2px solid rgba(126, 5, 100, 0.467);
+    border: 2px solid rgba(126, 5, 100, 0.467);
 }
 button:hover{
     background-color: #a945a9;
@@ -92,43 +136,56 @@ button:hover{
     0 0 80px #a945a9;
     transition-delay: 1s;
 }
-
-
-#sidebar{
-    background-color: white;
-}
-
-
-.category{
-    
-    margin:5px;
+.category{margin:5px;
     padding: 5px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 
 }
+  
+/* Estilos de Galeria*/
 .image{
     margin:5px;
     padding: 5px;
     display: inline-block;
     height: 300px;
-
-
 }
 
 #friends, #dance, #textobiografia{
     display: none;
 }
 .image img:hover{
-    transform: scale(1.1);
+
+   border: 5px solid #f52bb8; 
+   transform: rotate(-3deg);
 }
 
-
-  
-  
-  
-
-
-
-footer{background-color: rgb(207, 99, 221);padding: 5px; font-size: 21px; color: indigo;}
+/*Estilos del fin del footer*/
+#facebook:hover{
+cursor: pointer;
+color: rgb(30, 7, 245);
+transform: translateY(-6px);
+}
+#instagram:hover{
+cursor: pointer;
+color: rgb(212, 247, 15);
+transform: translateY(-6px);
+}
+#twitter:hover{
+cursor: pointer;
+color: whitesmoke;
+transform: translateY(-6px);
+}
+#linke:hover{
+cursor: pointer;
+color: orangered;
+transform: translateY(-6px)
+}
+footer{background-color: rgb(207, 99, 221);
+       padding: 5px; 
+       font-size: 21px;
+       color: indigo;}
+strong{
+    color: oldlace;
+}
