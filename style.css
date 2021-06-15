@@ -15,7 +15,7 @@ h1{ display: inline-block;
     color: rgb(146, 7, 134);
     background: linear-gradient(to right,#033838,#f52bb8,#a945a9);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip:text;
+    -webkit-background-clip: text;
 }
 
 h2{text-align: center;
